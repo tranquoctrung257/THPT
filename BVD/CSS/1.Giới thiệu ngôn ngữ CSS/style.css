@@ -1,0 +1,7 @@
+span {
+    color: red;
+}
+/* có thể sử dụng nhiều bộ chọn */
+span,div {
+    color: red;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bảng trong html</title>
+</head>
+
+<!-- tr hàng -->
+<!-- th ô tiêu đề -->
+<!-- td ô -->
+<!-- khung của bảng border | trong html5 ko còn hỗ trợ border nữa nên sẽ sử dụng trong thuộc tính css như sau -->
+<!-- style="border: 1px solid red; |solid nét liền;dotted dấu chấm  double tạo 2 khung viền| border nhận giá trị là border: kích_thước_viền kiểu_viền màu_của_viền | thuộc tính này chỉ áp dụng cho thẻ table nên muốn sử dụng cho thẻ khác phải làm y chang như vậy lại-->
+ <!-- tiêu đề sử dụng phần tử caption -->
+
+<!-- để điều chỉnh kích thước sử dụng thuộc tính width và height trong table ta điều chỉnh trong phần giá trị của style | có 2 đơn vị là px và % ;% ở đây là % của màn hình  -->
+
+<body>
+    <table style="border: 1px dotted red; width: 600px; height: 400px;">
+        <caption>học phí các khóa học</caption>
+        <tr>
+            <th style="border: 1px dotted red;">khóa học</th>
+            <th style="border: 1px dotted red;">học phí</th>
+        </tr>
+
+        <tr>
+            <td style="border: 1px dotted red;">trí tuệ nhân tạo</td>
+            <td style="border: 1px dotted red;">100000</td>
+        </tr>
+        <tr>
+            <td style="border: 1px dotted red;">mạng máy tính</td>
+            <td style="border: 1px dotted red;">100000</td>
+        </tr>
+
+        <tr>
+            <td style="border: 1px dotted red;">python</td>
+            <td style="border: 1px dotted red;">200000</td>
+        </tr>
+        <tr>
+            <td style="border: 1px dotted red;">html5</td>
+            <td style="border: 1px dotted red;">150000</td>
+        </tr>
+    </table>
+</body>
+
+</html>

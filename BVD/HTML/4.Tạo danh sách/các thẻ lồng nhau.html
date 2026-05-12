@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>các thẻ lồng nhau</title>
+</head>
+<body>
+    <!-- danh sách có thứ tự lồng nhau -->
+    mức độ ưu tiên của thẻ này là hình tròn màu đen ==> hình tròn trắng ==> trở về sau nữa là hình tròn màu đen
+    <ul>
+        <li>mục 1</li>
+        <li>mục 2</li>
+        <ul >
+            <li>mục 3</li>
+            <li>mục 4</li>
+            <ul>
+                <li>mục 5</li>
+                <li>mục 6</li>
+                <ul>
+                    <li>mục 7</li>
+                    <li>mục 8</li>
+                </ul>
+            </ul>
+        </ul>
+        <li>mục 9</li>
+    </ul>
+    
+    <!-- danh sách có thứ tự trong danh sách có thứ tự sẽ lặp lại từ đầu khi thêm thẻ ol mới | 12 12  -->
+    <ol>
+        <li>mục 1</li>
+        <li>mục 2</li>
+        <ol>
+            <li>mục 3</li>
+            <li>mục 4</li>
+        </ol>
+    </ol>
+<hr>
+    <!-- nếu không muốn tuân theo cái mặc định đó thì -->
+     <ol>
+        <li>mục 1</li>
+        <li>mục 2</li>
+        <ol start="3">
+            <li>mục 3</li>
+            <li>mục 4</li>
+        </ol>
+    </ol>
+<hr>
+    <!-- luồng thêm tiếp 1 mục nữa  -->
+    <ol>
+        <li>mục 1</li>
+        <li>mục 2</li>
+        <ol >
+            <li>mục 3</li>
+            <li>mục 4</li>
+            <ol>
+                <li>mục 5</li>
+                <li>mục 6</li>
+            </ol>
+        </ol>
+    </ol>
+
+
+    <!-- danh sách có thứ tự lồng danh sách không có thứ tự -->
+    <!-- danh sách không có thứ tự lồng danh sách có thứ tự --> 
+    <!-- cái này không phụ thuộc vào loại danh sách trên nó là gì mà phụ thuộc vào mục nó đang đứng ở cấp thứ mấy -->
+
+        <ol>
+        <li>mục 1</li>
+        <li>mục 2</li>
+        <ul >
+            <li>mục 3</li>
+            <li>mục 4</li>
+            <ul>
+                <li>mục 5</li>
+                <li>mục 6</li>
+                <ul>
+                    <li>mục 7</li>
+                    <li>mục 8</li>
+                </ul>
+            </ul>
+        </ul>
+        <li>mục 9</li>
+    </ol>
+</body>
+</html>

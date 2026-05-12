@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- để gộp nhiều thành phần sử dụng ô fieldset -->
+    <form > 
+        <fieldset>
+            <legend>thông tin tài khoản</legend>
+            <label for="usname">Tên tài khoản:</label> <input text="text" name="usname" id="usname" value="giá trị mặc định" placeholder="giá trị gợi ý">  
+            <label for="psw" >Mật khẩu: </label>  <input type="text" name="psw" id="psw" placeholder="giá trị gợi ý">
+        </fieldset>
+
+        <fieldset>
+            <legend>Thông tin học tập</legend>
+                <label >lớp</label>
+                <input type="radio" name="class" id="class10" value="10"> <label for="class10">Lớp 10</label>
+                <input type="radio" name="class" id="class11" value="11"> <label for="class11">Lớp 11</label>
+                <input type="radio" name="class" id="class12" value="12" checked > <label for="class12">Lớp 12</label>
+        </fieldset>
+        <fieldset>
+            <legend>gửi</legend>
+            <button>nhấn vào đây để gửi</button>
+        </fieldset>
+    </form>
+</body>
+</html>

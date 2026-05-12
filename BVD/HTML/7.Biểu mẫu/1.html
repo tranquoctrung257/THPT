@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tạo biểu mẫu</title>
+</head>
+    <h2>đăng nhập</h2>
+    <!-- định danh id kết nối vs nhãn label -->
+     <!-- để giở nội dụng trong 1 thẻ bất kì thì phải có thẻ name -->
+<body>
+    <!-- trong thẻ input text giá trị value là giá trị mặc định khi mở trong ô  -->
+
+    <!-- phương thức gửi get gửi trên địa chỉ html sau dấu ? -->
+    <!-- phương thức post gửi dữ liệu ăn toàn hơn khi ko có trên url -->
+    <!-- action gửi dữ liệu đi đâu link nàof mặc định rỗng là gửi đến trang web hiện tại -->
+    <form method="get" action="">
+    <label for="usname">Tên tài khoản:</label> <input text="text" name="usname" id="usname" value="giá trị mặc định" placeholder="giá trị gợi ý">  
+    <label for="psw" >Mật khẩu: </label>  <input type="text" name="psw" id="psw" placeholder="giá trị gợi ý">
+        
+
+    <!-- để thay thế phần input nhập mật khẩu bằng dấu ... -->
+    <!-- thuộc tính required sẽ mặc định không gửi đi nếu người dùng không nhập nội dung vào phần thẻ chứa phần tử này |có thể sử dụng trong các thẻ khác  -->
+    <hr>
+    <label for="password">Nhập password: </label><input type="password" name="password" id="password" required>
+
+    <!-- input type radio tạo ô chọn 1 giá trị duy nhất trong thuộc tính radio thì name phải đặt giống nhau | value là giá trị để web biết và nhận giá trị đó gửi lên sever | giá trị checked để cho trình duyệt biết giá trị mặc định trước khi người dùng chọn-->
+    <br>
+    <label >lớp</label>
+    
+    <input type="radio" name="class" id="class10" value="10"> <label for="class10">Lớp 10</label>
+    <input type="radio" name="class" id="class11" value="11"> <label for="class11">Lớp 11</label>
+    <input type="radio" name="class" id="class12" value="12" checked > <label for="class12">Lớp 12</label>
+
+    <!-- hoàn toàn có thể có nhãn (label) trước hoặc sau input radio và input checkbox -->
+    <br>
+    <!-- check box tạo ô lựa chọn nhiều giá trị | các giá trị trong id khác nhau-->
+     <!-- có thể dùng phần tử checked ở cuối để thêm gợi ý mặc định trước khi người dùng nhập -->
+    <input type="checkbox" name="python" id="python" checked> <label for="python">Python</label>
+    <br>
+    <label for="HTML">HTML</label> <input type="checkbox" name="HTML" id="HTML"checked > 
+    
+    <br>
+    <input type="submit" value="Đăng kí">
+    <!-- có thể thay nút input submit thành button cả 2 đều có chức năng như nhau -->
+    <button>đăng kí</button>
+
+    <hr>
+    <!-- nút bấm không có tác dụng gì cả -->
+
+    <input type="button" value="nhấn vào đây nếu bạn thấy chán">
+
+    <!-- để reset tất cả các giá trị sử dụng input type reset  -->
+    <input type="reset" value="reset">
+    <br>
+    <br>
+    <!-- tải lên 1 file nào đó  -->
+    <label for="file">tải lên file</label> <input type="file" name="file" id="file">
+
+    <br>
+    <!-- thẻ input nhập email -->
+    <label for="email">Bạn hãy nhập email</label> <input type="email" name="email" id="email">
+
+    <br>
+    <!-- thẻ chọn màu yêu thích -->
+    <label for="color">chọn màu yêu thích</label> <input type="color" name="color" id="color">
+
+    <br>
+    <!-- để thu thập thông tin là ngày tháng -->
+    <label for="ngay">nhập ngày tháng</label><input type="date" name="ngay" id="ngay">
+    
+    <br>
+    <!-- dữ liệu gửi kèm biểu mẫu nó không được hiện thị ra trình duyệt -->
+    <input type="hidden" name="version" value="1.0.0.0">
+    
+    <br>
+    <!-- tạo danh sách kéo xuống | để chọn phần tử khác phần tử đầu làm thẻ mặc định thì chọn thẻ selected -->
+    <label for="toc_do">Tốc độ học </label>
+     <select name="toc_do" id="toc_do">
+        <option value="cham">tốc độ chậm</option>
+        <option value="binhthuong" selected>tốc độ bình thường</option>
+        <option value="nhanh">tốc độ nhanh</option>
+     </select>
+     
+     <br>
+     <!-- tạo ô nhập liệu to và có thể kéo to được | để thêm kí tự mặc định thì nhập vào giữa ô texearea | để phóng to hơn nữa ta dùng rows="10" cols="40"-->
+     <label for="gioi_thieu_ban_than"></label>
+     <textarea id="gioi_thieu_ban_than" name="gioi_thieu_ban_than" rows="10" cols="40">tôi tên là ....</textarea>
+    </form>
+</body>
+</html>

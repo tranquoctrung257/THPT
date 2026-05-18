@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {border:1px solid red;}
+    </style>
+</head>
+<body>
+    <!-- phần tử khối là những phần tử thường tạo ra những dòng mới và sẽ chiếm hết chiều rộng của dòng đó hoặc nếu cần thêm không gian thì nó có thể chiếm hết những dòng tiếp theo -->
+     <!-- phần tử nội tuyến là phần tử được nhúng vào phần tử khác và nó sẽ chiếm cùng dòng với phần tử khác nó sẽ không tách ra làm dòng riêng -->
+
+    <!-- h1 đến h6 là phần tử khối -->
+    <div >
+        <h1 style="background-color: red;">h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+    </div>
+
+    <!-- div là phần tử khối còn span,img,audio,video,objec là phần tử nội tuyến -->
+    <!-- ol ul dl form là phần tử khối -->
+
+    <!-- ví dụ đổi 1 phần tử khối thành 1 phần tử nội tuyến -->
+    <div>
+        <!-- định dạng nội tuyến  -->
+        <span style="display: inline;">xin chào</span>
+
+        <!-- định dạng khung  -->
+        <span style="display: block;">xin chào</span>
+
+        <!-- none không hiện thị  -->
+        <span style="display: none;">xin chào</span>
+    </div>
+</body>
+</html>

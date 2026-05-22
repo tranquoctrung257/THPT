@@ -1,1 +1,1 @@
-print()
+print("xin chào")

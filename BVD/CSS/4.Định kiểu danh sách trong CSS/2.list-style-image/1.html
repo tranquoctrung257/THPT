@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- thêm hình ảnh vào đầu mục và thuộc tính này có tính kế thừa cao nhất và các thư mục con của nó -->
+    <ul style="list-style-image: url(https://developer.mozilla.org/shared-assets/images/examples/rocket.svg);">
+        <li>mục 1</li>
+        <li style="list-style-type: disc;">mục 2</li>
+        <li>mục 3</li>
+        <li>mục 4</li>
+        <ul>
+            <li>mục 1</li>
+            <ul>
+                <li>mục 1</li>
+            </ul>
+        </ul>
+    </ul>
+    <!-- để loại bỏ tính kế thừa cho các thư mục con -->
+    <ul style="list-style-image: url(https://developer.mozilla.org/shared-assets/images/examples/rocket.svg);">
+        <li>mục 1</li>
+        <li>mục 2</li>
+        <li>mục 3</li>
+        <li>mục 4</li>
+        <ul style="list-style-image: none;">
+            <li>mục 1</li>
+            <li>mục 2</li>
+            <li>mục 3</li>
+            <ul>
+                <li>mục 1</li>
+                <li>mục 2</li>
+                <li>mục 3</li>
+            </ul>
+        </ul>
+    </ul>
+</body>
+</html>

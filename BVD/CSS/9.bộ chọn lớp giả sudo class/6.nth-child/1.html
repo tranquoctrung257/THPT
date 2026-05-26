@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- chọn các phần tử là con thứ nhất con thứ 2 con thứ 3 của cha nó hoặc con chẵn hoặc con lẻ của cha nó  -->
+    <style>
+        /* các ô trong phần tử tr mà là con chẵn của cha nó */
+        tr:nth-child(even){ 
+            background-color: aqua;
+        }
+        /* odd để tô những hàng lẻ */
+        tr:nth-child(odd){ 
+            background-color: yellowgreen;
+        }
+        /* hoặc có thể tô chính xác vào hàng nào đó  */
+        tr:nth-child(5){ 
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" cellspacing="0" >
+        <caption>Bảng Điểm</caption>
+        <tr>
+            <th rowspan="2">họ và tên </th>
+            <th colspan="3">điểm thi</th>
+        </tr>
+
+        <tr>
+            <td>toán</td>
+            <td>vật lý</td>
+            <td>hóa học</td>
+        </tr>
+        <tr>
+            <td>lần 1</td>
+            <td>6</td>
+            <td>7.6</td>
+            <td>8</td>
+        <tr>
+            <td>lần 2</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        <tr>
+            <td>lần 3</td>
+            <td>5</td>
+            <td>7.6</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+</html>

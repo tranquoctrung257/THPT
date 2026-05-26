@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    /* chỉ tính anh em của p chứ ở đoạn này không tính h2  */
+    /* even con chẵn  */
+    /* odd con lẻ  */
+    /* hoặc có thể sử dụng số */
+    /* chỉ sử dụng cho anh em của nó chứ không sử dụng cho phần tử khác ở đây anh em của nó là p  */
+        #demo1 p:nth-of-type(odd){
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo1">
+        <h2>nth-of-type</h2>
+        <p>phần tử số 1</p>
+        <p>phần tử số 2</p>
+        <p>phần tử số 3</p>
+        <p>phần tử số 4</p>
+        <p>phần tử số 5</p>
+        <p>phần tử số 6</p>
+        <p>phần tử số 7</p>
+    </div>
+</body>
+</html>
